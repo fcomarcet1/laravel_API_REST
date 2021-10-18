@@ -24,7 +24,6 @@ class PlaneFactory extends Factory
     {
         //$countManufacturers= Manufacturer::all()->count();
         // manufacturer_id	model	length	capacity	speed	autonomy
-
         return [
             'manufacturer_id' =>Manufacturer::all()->random()->id,
             'model' => $this->faker->word(),
